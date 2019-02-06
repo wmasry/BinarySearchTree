@@ -44,10 +44,10 @@ class BST:
 
   # Recursive
   def findMax(self, root):
-    if root.right is None: # removed *self.root
-      return root # removed *self.root
+    if root.right is None:
+      return root
     else:
-      return self.findMax(root.right) # removed *self.root and added *self.findax
+      return self.findMax(root.right)
 
   def insert(self, data):
     self.root = self.insertInTree(self.root, data)
